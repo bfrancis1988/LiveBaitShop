@@ -1,0 +1,208 @@
+:root{
+  --primary: #999999;
+  --opacity: .85;
+  --border: double;
+  --shadow: 5px 5px 5px black;
+}
+
+
+body{
+  background-image: url("images/water2.jpg");
+  background-size: cover;
+
+}
+
+
+/* navigation menu */
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+}
+
+nav > a {
+  width: 150px;
+  margin: 10px;
+ font-size:1.5em;
+ text-align:center;
+ color:white;
+}
+
+/* body */
+
+.intro{
+  background-image: url("images/Jumpingfish.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 250px;
+  margin: 10px;
+}
+
+.intro-sub{
+  color:white;
+  padding:5px;
+  text-shadow: 2px 2px 8px black;
+
+}
+
+h1{
+  font-size:3em;
+}
+
+
+.service{
+  background-color: var(--primary);
+  opacity: var(--opacity);
+  border: var(--border);
+  margin: 10px;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.service-top{
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.service-top > img{
+  width: 75%;
+  border:solid;
+  box-shadow: var(--shadow);
+}
+
+.list-items-main{
+  font-size: 2em;
+}
+
+
+.bottom-section{
+  background-color: var(--primary);
+  opacity: var(--opacity);
+  border: var(--border);
+  margin: 10px;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.bottom-section-top{
+  border: var(--border);
+  padding: 10px;
+  margin: 10px;
+}
+
+.bottom-section-top > h2{
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.bottom-section-top > p {
+  font-size: 1.5em;
+}
+
+.bottom-section > img{
+  margin:auto;
+  border:solid;
+  box-shadow: var(--shadow);
+
+}
+
+/* Bait page */
+
+.bait{
+  background-color: var(--primary);
+  opacity: var(--opacity);
+  border: var(--border);
+  margin: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+
+}
+
+.prices{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+
+}
+
+.bait-title{
+  font-size:1.5em;
+  font-weight: bold;
+
+}
+
+.bait-header{
+  background-color: var(--primary);
+  text-align: center;
+  border: var(--border);
+  box-shadow: var(--shadow);
+
+}
+.bait-header > h1{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.bait-footer{
+  text-align:center;
+
+}
+
+/* Contact Us page */
+
+.wrapper{
+
+}
+
+.wrapper-sub{
+  background-color: var(--primary);
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+/* Footer Section */
+
+footer{
+  background-color: black;
+  color:white;
+  margin-top: 50px;
+  padding:5px;
+  width: 100%;
+  text-align:center;
+  position: fixed;
+  bottom:0px;
+  left:0px
+}
+
+@media (max-width: 845px){
+  nav{
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper-sub{
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+
+
+
+/*end*/
